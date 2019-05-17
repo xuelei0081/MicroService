@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>跨域请请求页面</title>
+    <script src="../jquery-1.10.2.js"></script>
+
+    <script>
+        $(function () {
+            $.ajax({
+                type:"GET",
+                url:"http://127.0.0.1:8750/getJsonpTrue",
+                dataType: "jsonp",
+                jsonp: "callback",
+                data:{},
+                async:true,
+            });
+        })
+    </script>
+</head>
+<body>
+success
+</body>
+</html>
